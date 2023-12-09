@@ -3,13 +3,13 @@
 #include <iostream>
 using namespace std;
 
-int helper(int n){
-	return n==0?1:4*helper(n-1);
+int fib(int n){
+	return n==1?1:n*fib(n-1);
 }
 
 
 int main() {
-	cout<<helper(4);
+	cout<<fib(6);
     
     return 0;
 }
