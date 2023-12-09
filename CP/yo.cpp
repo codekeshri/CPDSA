@@ -3,12 +3,22 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int n){
-	return n==1?1:n*factorial(n-1);
+void table(int n, int current, int range){
+	  if(current>range) return ;
+	  else {
+	  	cout<<n << " X " << current<<"= "<< n*current<<endl;
+	  	table(n, current+1, range);
+	  }
 }
 
 
 int main() {
-    cout<<factorial(5);
+	int n, range;
+	cout<<"Enter number = ";
+	cin>>n;
+	cout<<"Enter range = ";
+	cin>>range;
+    table(n, 0, range);
+    
     return 0;
 }
