@@ -1,17 +1,17 @@
-//Factorial
-
 #include <iostream>
 using namespace std;
 
-bool checkPrime(int n, int i){
-	if (i==1)return true;
-	else if(n%i!=0) checkPrime(n, i-1);
-	else return false;
+int helper(int n){
+	if(n==1)return 1;
+	else if (n%2==0)return 1+helper(n/2);
+	else return 1+helper(3*n+1);
 }
 
 
 int main() {
-	cout<<checkPrime(17, 16);
-    
+	int n;
+	cin>>n;
+	int length = helper(n);
+	cout<<length;
     return 0;
 }
