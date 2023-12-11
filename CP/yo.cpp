@@ -1,17 +1,16 @@
 #include <iostream>
 using namespace std;
-
-int helper(int n){
-	if(n==1)return 1;
-	else if (n%2==0)return 1+helper(n/2);
-	else return 1+helper(3*n+1);
+//greatest common divisor
+int helper(int n1, int n2, int i){
+	if(n1%i == 0 &&  n2%i == 0)return i;
+	else return helper(n1, n2, i-1);
 }
 
 
 int main() {
-	int n;
-	cin>>n;
-	int length = helper(n);
-	cout<<length;
+	int n1, n2;
+	cin>>n1>>n2;
+	cout<< helper(n1, n2, min(n1, n2));
+	
     return 0;
 }
