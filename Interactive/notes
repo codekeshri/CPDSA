@@ -1,0 +1,43 @@
+bool found = found 
+while (!found) {
+	int x = random(1, 100);
+	cout << "?" << x << 
+}
+
+
+
+
+
+
+
+// normal - time space              
+// interactive - time space and limit on the interactions
+
+input / output
+for(int i=0; i<1000; i++){ //0.1 second
+	cout << i;              // 0.5 second 
+}
+
+cout << 1; //heavy task
+c = a + b;
+
+//so printing happens in buffer
+
+for(int i=0; i<1000; i++){ 
+	cout << i << "\n";              // faster
+}
+
+for(int i=0; i<1000; i++){ 
+	cout << i << endl; // slower as it flushes the output every .                    //loop
+}
+
+
+concept of flushing and buffer
+=> go through the blog on flushing over buffer
+interactive problems are flushed every time.
+
+its hard to test the problem
+
+so let's see how we can code and test it.
+
+//my name is arvind kumar keshariya
