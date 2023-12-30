@@ -16,11 +16,13 @@ int main() {
         if(h<H)ans = min((60*(h - H + 24) + (m - M)), s);
         else if(h==H && m >= M) ans = min((60*(h - H) + (m - M)), s);
         else if(h > H) ans = min((60*(h - H) + (m - M)), s);
+        else if
         s = ans;
        // cout << s << endl;
     }
         int ansh = s/60;
         int ansm = s%60;
+        
         cout << ansh << " " << ansm << endl;
     }
     
