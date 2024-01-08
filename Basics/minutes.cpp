@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 #include<math.h>
-
-
+ 
+ 
 int main() {
     int t;
     cin >> t;
@@ -15,6 +15,7 @@ int main() {
         cin >> h >> m;
         if(h<H)ans = min((60*(h - H + 24) + (m - M)), s);
         else if(h==H && m >= M) ans = min((60*(h - H) + (m - M)), s);
+        else if(h==H && m < M) ans = min((60*(h - H + 24) - abs(m - M)), s);
         else if(h > H) ans = min((60*(h - H) + (m - M)), s);
         s = ans;
        // cout << s << endl;
