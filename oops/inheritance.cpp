@@ -9,32 +9,39 @@ using namespace std;
 // private only within the class and not in external or derived class
 
 class Human{
+	string Religion, color;
+public:
 	string name;
 	int age, weight;
-
-
-
-public:
-	Human();
-	~Human();
 	
 };
 
-class Teacher{
-	string name;
-	int age, weight;
-	int salary, id;
-};
 
-class Student{
-	string name;
-	int age, weight, fees, roll_number;
-}
+class Student: protected Human 
+{
+private: 
+	int roll_number, fees;
+	
+public: 
+	Student(string name, int age, int weight, int roll_number, int fees){
+		this->name = name;
+		this->age = age;
+		this->weight = weight;
+		this->roll_number = roll_number;
+		this->fees = fees;
+		
+	}
+	
+	void display(){
+		cout << name <<" "<< age<<" " << weight<<" " << roll_number<<" " << fees <<" ";
+	}
+};
 
 
 
 
 
 int main() {
-    
+    Student A("avi", 11, 65, 230, 30);
+    A.display();
 }
