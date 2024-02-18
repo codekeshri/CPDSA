@@ -48,26 +48,16 @@ void init_code(){
 /*-------------------------------------------------------------------------------------------------------------*/
 
 void solve() {
-  int k, x, a; 
-  cin >> k >> x >> a;
-  
-  int sum =1;
-  for(int i = 1; i <= x; i++){
-    sum += (k-1)*sum;
-  }
-  
-  if(sum < a)cout << "yes"<< endl;
-  else cout << "no" << endl;
-  
- 
-  
-
+  int n, m; 
+    cout << "ok";
+    cerr << " okie";
+    
 }
 
 int main() {
     init_code();   
-    int t;
-    cin >> t;
+    int t = 1;
+    //cin >> t;
     while(t--) {
       solve();
     }
