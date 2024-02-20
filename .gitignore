@@ -1,7 +1,7 @@
-.cph
-.vscode
-.a.exe
-X
-*.exe
-.*
-.gitignore
+/.cph
+/.vscode
+/.a.exe
+/X
+/*.exe
+/.*
+/.gitignore
