@@ -1,14 +1,34 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main() {
+class Stack
+{
+  deque<int> d;
+  
+public:
+  void push(int x){
+    d.push_back(x);
+  }
+  
+  void pop(){
+    d.pop_back();
+  } 
+  
+  int top(){
+    if(d.empty()) return -1;
+    return d.back();
+  }
+};
 
-    int t;
-    cin >> t;
-    while(t--){
-        int n;
-        cin >> n;
-        cout << 2 << " " << n - 1 << endl;
-    }
-    return 0;
+
+int main() {
+  Stack s;
+  s.push(1);
+  s.push(2);
+  s.pop();
+  s.top();
+  
+  
+  return 0;
 }
+

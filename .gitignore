@@ -1,0 +1,7 @@
+.cph
+.vscode
+.a.exe
+X
+*.exe
+.*
+.gitignore

@@ -134,6 +134,14 @@ int main() {
 	// push_back(), push_front(), pop_back(), pop_front(), front(), back(), size(), empty()
 	// All these operations are O(1), even indexing is O(1)
 	
+	deque<int> d;
+	
+	d.push_back(1);
+	d.push_front(1);
+	d.pop_back();
+	d.pop_back();
+	d.front();
+	d.back();
 	
 	
 
